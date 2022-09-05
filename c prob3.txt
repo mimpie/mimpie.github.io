@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include<stdlib.h>    //abs()
+int main (void){
+int a[100] = { 0,0, };
+int n = 0;
+int i = 0;
+int k = 0;
+
+      while (1)
+    {  
+      printf("입력할 정수의 개수를 입력하세요:");
+      scanf("%d", &n);
+      if (n <=100)
+        break;
+    }
+
+
+    for (i = 0; i < n; i++)
+    {
+      printf("%d번째 정수를 입력하세요: ", i+1);
+      scanf("%d", &a[i]);
+      }
+
+printf("입력할 정수1개를 입력하세요:");
+      scanf("%d", &k);
+
+  for (int j = 0; j)
+printf(abs(k - &a[i]));
+return 0;
+
+
+}

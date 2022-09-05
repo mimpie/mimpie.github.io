@@ -1,0 +1,47 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+    int a[100] = { 0,0, };
+    int sum = 0;
+    int max=1, min=1;
+    int n = 0;
+    int i = 0;
+
+    while (1)
+    {  
+      printf("입력할 정수의 개수를 입력하세요:");
+      scanf("%d", &n);
+      if (2<=n && n<=100)
+        break;
+    }
+
+    for (i = 0; i < n; i++)
+    {
+      printf("%d번째 정수를 입력하세요: ", i+1);
+      scanf("%d", &a[i]);
+
+      if (max < a[i])
+          max = a[i];
+      else
+          max = max;
+
+
+      if (min < a[i])
+          min = min;
+      else
+          min = a[i];
+
+      sum += a[i];
+    }
+
+    printf("총합   : %d\n", sum);
+    printf("평균   : %.2f\n", (float)sum / n);
+    printf("작은수 : %d\n", min);
+    printf("큰수   : %d\n", max);
+
+    return 0;
+}
+
+
